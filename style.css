@@ -1,1 +1,12 @@
 @charset "UTF-8";
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgray;
+    height: 100dvh;
+    width: 100dvh;
+}

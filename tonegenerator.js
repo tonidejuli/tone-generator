@@ -28,14 +28,17 @@ function initContext(){
 
 freqSlider.addEventListener('input', ()=>{
     freqValue.textContent = Number(freqSlider.value)
+    osc.frequency.value = Number(freqSlider.value)
 })
 
 volSlider.addEventListener('input', ()=>{
     volValue.textContent = Number(volSlider.value)
+    ganho.gain.value = Number(volSlider.value)
 })
 
 waveSelect.addEventListener('change', ()=>{
     console.log(waveSelect.value)
+    osc.type = waveSelect.value
 })
 
 let isPlaying = false
